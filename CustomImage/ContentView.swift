@@ -10,7 +10,10 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World")
+        Image("SwiftUI").resizable()
+            .clipShape(Circle())
+            .overlay( Circle().stroke(Color.black, lineWidth: 10))
+            .frame(width: 300, height: 300, alignment: .center)
     }
 }
 
@@ -21,3 +24,6 @@ struct ContentView_Previews : PreviewProvider {
     }
 }
 #endif
+
+
+
